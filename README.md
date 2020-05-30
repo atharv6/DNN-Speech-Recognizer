@@ -164,37 +164,5 @@ The model is trained for at least 20 epochs, the loss values are saved in `model
 
 The model is trained for at least 20 epochs, the loss values are saved in `model_4.pickle` and the trained weights for the model specified in `bidirectional_rnn_model` are stored in `model_4.h5`. 
 
-#### Final Model
-The final model has the following architecture:   	|
-_________________________________________________________________
-|Layer (type)             |    Output Shape         |     Param #  | 
-=================================================================
-|the_input (InputLayer)   |    (None, None, 161)    |     0        | 
-_________________________________________________________________
-|conv1d_1 (Conv1D)        |   (None, None, 200)     |   354400     |
-_________________________________________________________________
-|dropout_1 (Dropout)      |   (None, None, 200)     |    0         |
-_________________________________________________________________
-|batch_normalization_1    |   (None, None, 200)     |    800       |
-_________________________________________________________________
-|bidirectional_1 	 |    (None, None, 400)    |   481200      | 
-_________________________________________________________________
-|dropout_2 (Dropout)      |    (None, None, 400)    |     0        |
-_________________________________________________________________
-|batch_normalization_2 	 | (None, None, 400)       |    1600       |  
-_________________________________________________________________
-|bidirectional_2 	 | (None, None, 400)       |   721200      |
-_________________________________________________________________
-|dropout_3 (Dropout)      |    (None, None, 400)    |     0        |
-_________________________________________________________________
-|batch_normalization_3 	 | (None, None, 400)       |   1600        |
-_________________________________________________________________
-|time_distributed_1 	 |  (None, None, 29)       |   11629       | 
-_________________________________________________________________ 
-|softmax (Activation)     |   (None, None, 29)      |    0         |  
-=================================================================
-Total params: 1,572,429
-
-Trainable params: 1,570,429
-
-Non-trainable params: 2,000
+#### Model 5: CNN + Bidirectional RNN + TimeDistributed Dense
+The model is trained for 28 epochs, the loss values are saved in `model_end(1).pickle` and the trained weights for the model are stored in `model_5.h5`. 
