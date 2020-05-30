@@ -167,31 +167,31 @@ The model is trained for at least 20 epochs, the loss values are saved in `model
 #### Final Model
 The final model has the following architecture:   	|
 _________________________________________________________________
-Layer (type)             |    Output Shape         |     Param #   
+|Layer (type)             |    Output Shape         |     Param #   
 =================================================================
-the_input (InputLayer)   |    (None, None, 161)    |     0         
+|the_input (InputLayer)   |    (None, None, 161)    |     0         
 _________________________________________________________________
-conv1d_1 (Conv1D)        |   (None, None, 200)     |   354400    
+|conv1d_1 (Conv1D)        |   (None, None, 200)     |   354400     |
 _________________________________________________________________
-dropout_1 (Dropout)      |   (None, None, 200)     |    0         
+|dropout_1 (Dropout)      |   (None, None, 200)     |    0         |
 _________________________________________________________________
-batch_normalization_1    |   (None, None, 200)     |    800       
+|batch_normalization_1    |   (None, None, 200)     |    800       |
 _________________________________________________________________
-bidirectional_1 	 |    (None, None, 400)    |   481200    
+|bidirectional_1 	 |    (None, None, 400)    |   481200      | 
 _________________________________________________________________
-dropout_2 (Dropout)      |    (None, None, 400)    |     0         
+|dropout_2 (Dropout)      |    (None, None, 400)    |     0        |
 _________________________________________________________________
-batch_normalization_2 	 | (None, None, 400)       |    1600      
+|batch_normalization_2 	 | (None, None, 400)       |    1600       |  
 _________________________________________________________________
-bidirectional_2 	 | (None, None, 400)       |   721200    
+|bidirectional_2 	 | (None, None, 400)       |   721200      |
 _________________________________________________________________
-dropout_3 (Dropout)      |    (None, None, 400)    |     0         
+|dropout_3 (Dropout)      |    (None, None, 400)    |     0        |
 _________________________________________________________________
-batch_normalization_3 	 | (None, None, 400)       |   1600      
+|batch_normalization_3 	 | (None, None, 400)       |   1600        |
 _________________________________________________________________
-time_distributed_1 	 |  (None, None, 29)       |   11629     
-_________________________________________________________________
-softmax (Activation)     |   (None, None, 29)      |    0         
+|time_distributed_1 	 |  (None, None, 29)       |   11629       | 
+_________________________________________________________________ 
+|softmax (Activation)     |   (None, None, 29)      |    0         |  
 =================================================================
 Total params: 1,572,429
 
