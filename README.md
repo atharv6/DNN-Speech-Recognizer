@@ -167,9 +167,9 @@ The model is trained for at least 20 epochs, the loss values are saved in `model
 #### Final Model
 The final model has the following architecture:   	|
 _________________________________________________________________
-|Layer (type)             |    Output Shape         |     Param #   
+|Layer (type)             |    Output Shape         |     Param #  | 
 =================================================================
-|the_input (InputLayer)   |    (None, None, 161)    |     0         
+|the_input (InputLayer)   |    (None, None, 161)    |     0        | 
 _________________________________________________________________
 |conv1d_1 (Conv1D)        |   (None, None, 200)     |   354400     |
 _________________________________________________________________
